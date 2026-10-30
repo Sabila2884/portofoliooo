@@ -1017,3 +1017,239 @@ button {
         font-size: 24px;
     }
 }
+
+
+
+/* =====================================
+   HEADING HALAMAN HOBI DAN KONTAK
+===================================== */
+
+.page-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto 45px;
+}
+
+.page-heading > span {
+    display: inline-block;
+    color: #4f8cff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.page-heading h1 {
+    color: #172554;
+    font-size: 36px;
+    margin-bottom: 14px;
+}
+
+.page-heading p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   HALAMAN HOBI
+===================================== */
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    margin: 0 auto 50px;
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.13);
+}
+
+.hobby-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.hobby-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 22px;
+}
+
+.hobby-content > span {
+    color: #4f8cff;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hobby-content h2 {
+    color: #172554;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.hobby-content p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.card-link {
+    margin-top: auto;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =====================================
+   HALAMAN KONTAK
+===================================== */
+
+.contact-section {
+    width: 100%;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    margin: 0 auto 60px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 0;
+    padding: 28px;
+    color: inherit;
+    text-decoration: none;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 65px;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 30px;
+}
+
+.contact-card.instagram .contact-icon {
+    color: #d9468f;
+    background: #fdf2f8;
+}
+
+.contact-card.whatsapp .contact-icon {
+    color: #16a34a;
+    background: #f0fdf4;
+}
+
+.contact-card h2 {
+    color: #172554;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.contact-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.contact-card span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* =====================================
+   RESPONSIVE / TAMPILAN HP
+===================================== */
+
+@media (max-width: 768px) {
+    .page-heading {
+        margin: 30px auto 35px;
+        padding: 0 10px;
+    }
+
+    .page-heading h1 {
+        font-size: 29px;
+    }
+
+    .hobby-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hobby-card img {
+        height: 220px;
+    }
+
+    .contact-card {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 420px) {
+    .page-heading h1 {
+        font-size: 25px;
+    }
+
+    .hobby-content {
+        padding: 18px;
+    }
+
+    .contact-card {
+        gap: 14px;
+        padding: 18px;
+    }
+
+    .contact-icon {
+        flex-basis: 55px;
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+}
