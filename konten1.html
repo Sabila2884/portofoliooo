@@ -1,58 +1,100 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontak | Yastatiqun Sabila</title>
     <link rel="stylesheet" href="css projek.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class="header2">
-        <div class="btn">
-        <span class="fas fa-bars"></span>
-        </div>
-        <h1>KONTAK DAN SOSIAL MEDIA</h1>
-        <nav>
-            
-        </nav>
-    </header>
-    <main>
 
-        <aside>
-            <nav class="sidebar">
-                <ul>
-            <li class="main"><a href="index.html">Beranda</a></li>
-            <li class="hobi"><a href="hobi.html">Hobi</a></li>
-            <li class="konten1"><a href="konten1.html">Kontak</a></li>
-        </ul>    
+<header class="header">
+    <a href="index.html" class="logo">Sabila<span>.</span></a>
+    <button class="btn" aria-label="Buka menu">
+        <i class="fas fa-bars"></i>
+    </button>
+</header>
+
+<aside class="sidebar">
+    <div class="sidebar-title">
+        <h2>Menu</h2>
+        <button class="close-btn" aria-label="Tutup menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <nav>
+        <a href="index.html">
+            <i class="fas fa-user"></i> Beranda
+        </a>
+        <a href="hobi.html">
+            <i class="fas fa-heart"></i> Hobi
+        </a>
+        <a href="konten1.html" class="active">
+            <i class="fas fa-envelope"></i> Kontak
+        </a>
     </nav>
+</aside>
 
-            
-        </aside>
+<div class="overlay"></div>
 
-         <article class="article2">   
-            <div> 
-                
-                <a href="https://www.instagram.com/sup0264?igsh=MW9ld3J2dDJjeGVkNg%3D%3D" class="link-ig">
-                <img  src="ig.png"class="ikon-ig" >   </a> 
+<main class="container">
 
-                <a href=" https://wa.me/qr/XILAVFDIR4L5I1 " >
-                    <img src="WhatsApp.svg-removebg-preview.png" class="ikon-wa">
-                </a>
-            </div>   
-            
-        </article>
+    <section class="contact-section">
 
-    </main>
-            <footer class="footer2">
-                <h1>COPYRIGHT</h1>
-                <a href="main.html">Kembali ke beranda</a>
-            </footer>
-        
-    
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="projek.js"></script>
+        <div class="page-heading">
+            <span>TERHUBUNG DENGAN SAYA</span>
+            <h1>Kontak & Media Sosial</h1>
+            <p>
+                Kamu dapat menghubungi dan mengenal saya lebih dekat
+                melalui media sosial berikut.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <a href="https://www.instagram.com/sup0264?igsh=MW9ld3J2dDJjeGVkNg%3D%3D"
+               target="_blank" class="contact-card instagram">
+
+                <div class="contact-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+
+                <div>
+                    <h2>Instagram</h2>
+                    <p>@sup0264</p>
+                    <span>Kunjungi Instagram <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+            </a>
+
+            <a href="https://wa.me/qr/XILAVFDIR4L5I1"
+               target="_blank" class="contact-card whatsapp">
+
+                <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+
+                <div>
+                    <h2>WhatsApp</h2>
+                    <p>Hubungi saya melalui WhatsApp</p>
+                    <span>Kirim Pesan <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Yastatiqun Sabila. All Rights Reserved.</p>
+</footer>
+
+<script src="projek.js"></script>
 </body>
 </html>
-
