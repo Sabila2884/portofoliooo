@@ -1,55 +1,163 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJEK PEMROGRAMAN WEB</title>
+    <title>Profil | Yastatiqun Sabila</title>
     <link rel="stylesheet" href="css projek.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Link ke Font Awesome CSS -->
 </head>
 <body>
-    <header class="header">
-        <div class="btn">
-            <span class="fas fa-bars"></span> <!-- Ikon tiga garis dari Font Awesome -->
+
+<header class="header">
+    <a href="index.html" class="logo">Sabila<span>.</span></a>
+
+    <button class="btn" aria-label="Buka menu">
+        <i class="fas fa-bars"></i>
+    </button>
+</header>
+
+<aside class="sidebar">
+    <div class="sidebar-title">
+        <h2>Menu</h2>
+        <button class="close-btn" aria-label="Tutup menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <nav>
+        <a href="index.html" class="active">
+            <i class="fas fa-user"></i> Beranda
+        </a>
+        <a href="hobi.html">
+            <i class="fas fa-heart"></i> Hobi
+        </a>
+        <a href="konten1.html">
+            <i class="fas fa-envelope"></i> Kontak
+        </a>
+    </nav>
+</aside>
+
+<div class="overlay"></div>
+
+<main class="container">
+
+    <section class="profile-section">
+
+        <div class="profile-image">
+            <img src="WhatsApp Image 2024-04-21 at 17.39.31_b780ac91.jpg"
+                 alt="Foto profil Yastatiqun Sabila">
         </div>
-        <h1>PROFIL</h1>
-        <nav>
-            <!-- Tempat untuk menu navigasi jika ada -->
-        </nav>
-    </header>
-    <main>
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li class="main"><a href="main.html">Beranda</a></li>
-                    <li class="hobi"><a href="hobi.html">Hobi</a></li>
-                    <li class="konten1"><a href="konten1.html">Kontak</a></li>
-                </ul>    
-            </nav>
-        </aside>
-        <article class="article">
-            <h1>PROFIL SAYA</h1>
-            <img src="WhatsApp Image 2024-04-21 at 17.39.31_b780ac91.jpg" class="foto" alt="profil sabila">
-            <h3></h3>
-            <ul>
-                <li>Nama                : Yastatiqun Sabila</li>
-                <li>NIM                 : 2300018315</li>
-                <li>Tempat.Tgl.Lahir    : Bulungan, 02 - 08 - 2005</li>
-                <li>Asal                : Kalimantan Utara</li>
-                <li>Riwayat Pendidikan  
-                    <p>1. MIN Tanjung Selor          : 2012 - 2017 </p>
-                    <p>2. MTsN Tanjung Selor         : 2017 - 2020 </p>
-                    <p>3. MAN Tanjung Selor          : 2020 - 2023 </p>
-                    <p>4. Universitas Ahmad Dahlan   : 2023 - sekarang </p>
-                </li>
-            </ul>
-        </article>
-    </main>
-    <footer class="footer1">
-        <h1>COPYRIGHT</h1>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="projek.js"></script>
+
+        <div class="profile-content">
+            <span class="subtitle">SELAMAT DATANG DI PORTOFOLIO SAYA</span>
+
+            <h1>Halo, Saya <span>Yastatiqun Sabila</span></h1>
+
+            <p class="description">
+                Mahasiswa Program Studi Informatika
+                Universitas Ahmad Dahlan.
+                Saya memiliki ketertarikan dalam dunia teknologi
+                dan pengembangan diri.
+            </p>
+
+            <div class="profile-buttons">
+                <a href="konten1.html" class="primary-btn">
+                    Hubungi Saya <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="hobi.html" class="secondary-btn">
+                    Lihat Hobi
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about-section">
+        <div class="section-heading">
+            <span>TENTANG SAYA</span>
+            <h2>Informasi Pribadi</h2>
+        </div>
+
+        <div class="info-grid">
+
+            <div class="info-card">
+                <i class="fas fa-user"></i>
+                <div>
+                    <small>Nama Lengkap</small>
+                    <p>Yastatiqun Sabila</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-id-card"></i>
+                <div>
+                    <small>NIM</small>
+                    <p>2300018315</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <small>Tempat, Tanggal Lahir</small>
+                    <p>Bulungan, 02 Agustus 2005</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <i class="fas fa-globe-asia"></i>
+                <div>
+                    <small>Asal</small>
+                    <p>Kalimantan Utara</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="education-section">
+        <div class="section-heading">
+            <span>PERJALANAN PENDIDIKAN</span>
+            <h2>Riwayat Pendidikan</h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <span>2012 - 2017</span>
+                <h3>MIN Tanjung Selor</h3>
+                <p>Pendidikan Sekolah Dasar</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2017 - 2020</span>
+                <h3>MTsN Tanjung Selor</h3>
+                <p>Pendidikan Sekolah Menengah Pertama</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2020 - 2023</span>
+                <h3>MAN Tanjung Selor</h3>
+                <p>Pendidikan Sekolah Menengah Atas</p>
+            </div>
+
+            <div class="timeline-item">
+                <span>2023 - Sekarang</span>
+                <h3>Universitas Ahmad Dahlan</h3>
+                <p>Program Studi Informatika</p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Yastatiqun Sabila. All Rights Reserved.</p>
+</footer>
+
+<script src="projek.js"></script>
 </body>
 </html>
