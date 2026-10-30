@@ -1,3 +1,4 @@
+
 /* =========================
    GLOBAL STYLE
 ========================= */
@@ -93,4 +94,675 @@ button {
 
 .sidebar.show {
     left: 0;
+}
+
+.sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sidebar-title h2 {
+    font-size: 24px;
+}
+
+.close-btn {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar nav a {
+    padding: 14px 16px;
+    border-radius: 10px;
+    color: #dbeafe;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sidebar nav a i {
+    width: 28px;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+    background: #2563eb;
+    color: white;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15,23,42,0.5);
+    z-index: 150;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    max-width: 1150px;
+    width: 84%;
+    margin: auto;
+    min-height: calc(100vh - 145px);
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    padding: 85px 0;
+}
+
+.profile-image {
+    width: 320px;
+    height: 380px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 15px 15px 0 #dbeafe;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.subtitle,
+.section-heading span {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #2563eb;
+}
+
+.profile-content h1 {
+    font-size: 42px;
+    color: #172554;
+    line-height: 1.25;
+    margin: 18px 0;
+}
+
+.profile-content h1 span {
+    color: #2563eb;
+}
+
+.description {
+    color: #64748b;
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 28px;
+}
+
+.profile-buttons {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 12px 22px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.primary-btn:hover {
+    background: #172554;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 1px solid #cbd5e1;
+    color: #172554;
+}
+
+.secondary-btn:hover {
+    background: #dbeafe;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    color: #172554;
+    font-size: 30px;
+    margin-top: 7px;
+}
+
+.section-heading > p {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+/* =========================
+   BIODATA
+========================= */
+
+.about-section,
+.education-section {
+    padding: 55px 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.info-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.info-card i {
+    width: 48px;
+    height: 48px;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.info-card small {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+.info-card p {
+    color: #172554;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* =========================
+   EDUCATION TIMELINE
+========================= */
+
+.timeline {
+    border-left: 3px solid #bfdbfe;
+    margin-left: 10px;
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #2563eb;
+    border-radius: 50%;
+    left: -38px;
+    top: 6px;
+}
+
+.timeline-item span {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.timeline-item h3 {
+    color: #172554;
+    margin: 5px 0;
+}
+
+.timeline-item p {
+    color: #64748b;
+}
+
+/* =========================
+   KETERAMPILAN
+========================= */
+
+.cv-section {
+    padding: 55px 0;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.skill-item {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    transition: 0.3s;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.skill-item i {
+    font-size: 27px;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.skill-item span {
+    color: #172554;
+    font-weight: 700;
+}
+
+.skill-item small {
+    color: #64748b;
+}
+
+/* =========================
+   PELATIHAN & PENGALAMAN
+   DUA KOLOM
+========================= */
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+.resume-column {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.resume-column:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transform: translateY(-4px);
+}
+
+.resume-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 18px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.resume-heading > i {
+    width: 42px;
+    height: 42px;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.resume-heading h3 {
+    color: #172554;
+    font-size: 19px;
+}
+
+.resume-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.resume-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.resume-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 9px;
+    font-size: 16px;
+}
+
+.resume-content {
+    flex: 1;
+}
+
+.resume-content h4 {
+    color: #172554;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.resume-content p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================
+   PROJECT CARDS
+========================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.07);
+}
+
+.project-icon {
+    width: 55px;
+    height: 55px;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+.project-category {
+    display: inline-block;
+    color: #2563eb;
+    background: #dbeafe;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    color: #172554;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 18px;
+    padding: 10px 15px;
+    background: #172554;
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    background: #2563eb;
+    transform: translateY(-3px);
+}
+
+.project-link i {
+    font-size: 15px;
+}
+
+/* =========================
+   MOTTO HIDUP
+========================= */
+
+.motto-section {
+    background: #172554;
+    color: white;
+    padding: 45px 25px;
+    text-align: center;
+    border-radius: 18px;
+    margin: 50px 0 70px;
+}
+
+.motto-section > i {
+    color: #60a5fa;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.motto-section h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.motto-section p {
+    color: #dbeafe;
+    font-size: 17px;
+    font-style: italic;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #172554;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 23px 15px;
+    font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 88%;
+    }
+
+    .profile-section {
+        gap: 35px;
+    }
+
+    .profile-image {
+        width: 260px;
+        height: 320px;
+    }
+
+    .profile-content h1 {
+        font-size: 34px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        padding: 0 6%;
+    }
+
+    .container {
+        width: 88%;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 55px 0;
+        gap: 35px;
+    }
+
+    .profile-image {
+        width: 230px;
+        height: 270px;
+    }
+
+    .profile-content h1 {
+        font-size: 32px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile-buttons {
+        justify-content: center;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .resume-column {
+        padding: 20px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .experience-card {
+        align-items: flex-start;
+    }
+
+}
+
+/* =========================
+   RESPONSIVE HP KECIL
+========================= */
+
+@media (max-width: 420px) {
+
+    .profile-content h1 {
+        font-size: 27px;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 240px;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resume-heading h3 {
+        font-size: 17px;
+    }
+
+    .motto-section p {
+        font-size: 15px;
+    }
+
+    .project-link {
+        font-size: 11px;
+    }
+
 }
