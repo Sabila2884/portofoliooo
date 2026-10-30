@@ -14,9 +14,17 @@ function closeMenu() {
     overlay.classList.remove("show");
 }
 
-menuButton.addEventListener("click", openMenu);
-closeButton.addEventListener("click", closeMenu);
-overlay.addEventListener("click", closeMenu);
+if (menuButton && sidebar && overlay) {
+    menuButton.addEventListener("click", openMenu);
+}
+
+if (closeButton) {
+    closeButton.addEventListener("click", closeMenu);
+}
+
+if (overlay) {
+    overlay.addEventListener("click", closeMenu);
+}
 
 document.addEventListener("keydown", function(event) {
     if (event.key === "Escape") {
