@@ -1,61 +1,107 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hobi | Yastatiqun Sabila</title>
     <link rel="stylesheet" href="css projek.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header class="header3">
-        <div class="btn">
-            <span class="fas fa-bars"></span>
-            </div>
-        <h1>HOBI</h1>
-    </header>
 
-    <main>
-        <aside>
-            <ul>
-            <nav class="sidebar">
-            <h2><li class="main"><a href="main.html">Beranda</a></li></h2>
-            <h2><li class="hobi"><a href="hobi.html">Hobi</a></li></h2>
-            <h2><li class="konten1"><a href="konten1.html">Kontak</a></li></h2> 
-        </ul>
+<header class="header">
+    <a href="index.html" class="logo">Sabila<span>.</span></a>
+    <button class="btn" aria-label="Buka menu">
+        <i class="fas fa-bars"></i>
+    </button>
+</header>
+
+<aside class="sidebar">
+    <div class="sidebar-title">
+        <h2>Menu</h2>
+        <button class="close-btn" aria-label="Tutup menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <nav>
+        <a href="index.html">
+            <i class="fas fa-user"></i> Beranda
+        </a>
+        <a href="hobi.html" class="active">
+            <i class="fas fa-heart"></i> Hobi
+        </a>
+        <a href="konten1.html">
+            <i class="fas fa-envelope"></i> Kontak
+        </a>
     </nav>
-            
-            
-     
-        </aside>
-         <article class="article3">   
-            <div> 
-                <a href="https://id.wikipedia.org/wiki/Catur">
-                <img src="images (1).jpeg" class="catur"></a>
+</aside>
 
-                <a href="https://id.wikipedia.org/wiki/Kubus_Rubik">
-                <img src="rubik_43.jpeg" class="rubik"></a>
+<div class="overlay"></div>
 
-                <a href="https://id.wikipedia.org/wiki/Ukulele">
-                <img src="ukulele.jpg" class="ukulele"></a>
+<main class="container">
 
-                <a href="https://id.wikipedia.org/wiki/Sepeda" >
-                <img src="sepeda.jpg" class="sepeda" ></a>
-                
-                
-                
-                
-                
-            </div> 
-             
-        </article>
-            <footer class="footer3">
-                <h1>COPYRIGHT</h1>
-                <a href="main.html">Kembali ke beranda</a>
-            </footer>
-            
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <section class="page-heading">
+        <span>AKTIVITAS FAVORIT</span>
+        <h1>Hobi Saya</h1>
+        <p>Beberapa kegiatan yang saya sukai untuk mengisi waktu luang.</p>
+    </section>
+
+    <section class="hobby-grid">
+
+        <a href="https://id.wikipedia.org/wiki/Catur" target="_blank"
+           class="hobby-card">
+            <img src="images (1).jpeg" alt="Permainan catur">
+            <div class="hobby-content">
+                <span>01</span>
+                <h2>Bermain Catur</h2>
+                <p>Melatih konsentrasi, strategi, dan kemampuan berpikir.</p>
+                <div class="card-link">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+
+        <a href="https://id.wikipedia.org/wiki/Kubus_Rubik" target="_blank"
+           class="hobby-card">
+            <img src="rubik_43.jpeg" alt="Kubus Rubik">
+            <div class="hobby-content">
+                <span>02</span>
+                <h2>Bermain Rubik</h2>
+                <p>Menyelesaikan teka-teki dengan logika dan ketelitian.</p>
+                <div class="card-link">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+
+        <a href="https://id.wikipedia.org/wiki/Ukulele" target="_blank"
+           class="hobby-card">
+            <img src="ukulele.jpg" alt="Ukulele">
+            <div class="hobby-content">
+                <span>03</span>
+                <h2>Bermain Ukulele</h2>
+                <p>Menikmati musik dan memainkan berbagai lagu.</p>
+                <div class="card-link">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+
+        <a href="https://id.wikipedia.org/wiki/Sepeda" target="_blank"
+           class="hobby-card">
+            <img src="sepeda.jpg" alt="Bersepeda">
+            <div class="hobby-content">
+                <span>04</span>
+                <h2>Bersepeda</h2>
+                <p>Menjelajahi tempat baru sekaligus menjaga kebugaran.</p>
+                <div class="card-link">Pelajari lebih lanjut <i class="fas fa-arrow-right"></i></div>
+            </div>
+        </a>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Yastatiqun Sabila. All Rights Reserved.</p>
+</footer>
+
 <script src="projek.js"></script>
 </body>
 </html>
